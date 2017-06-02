@@ -28660,9 +28660,18 @@
 	
 	var About = function About(props) {
 	   return React.createElement(
-	      'h2',
+	      'div',
 	      null,
-	      'About Component'
+	      React.createElement(
+	         'h2',
+	         null,
+	         'About'
+	      ),
+	      React.createElement(
+	         'p',
+	         null,
+	         'This is about page'
+	      )
 	   );
 	};
 	module.exports = About;
