@@ -28684,9 +28684,18 @@
 	// });
 	var Example = function Example(props) {
 	  return React.createElement(
-	    'h2',
+	    'div',
 	    null,
-	    'Example Component!'
+	    React.createElement(
+	      'h2',
+	      null,
+	      'Example'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'Welcome to Example Page!'
+	    )
 	  );
 	};
 	module.exports = Example;
