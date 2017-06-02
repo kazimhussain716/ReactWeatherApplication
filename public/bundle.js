@@ -28748,20 +28748,49 @@
 	// });
 	
 	var About = function About(props) {
-	   return React.createElement(
-	      'div',
+	  return React.createElement(
+	    'div',
+	    null,
+	    React.createElement(
+	      'h2',
+	      { className: 'text-center' },
+	      'About'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'This is weather application built on React.I have built this and its awesome.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'Here are som tools'
+	    ),
+	    React.createElement(
+	      'ul',
 	      null,
 	      React.createElement(
-	         'h2',
-	         null,
-	         'About'
+	        'li',
+	        null,
+	        React.createElement(
+	          'a',
+	          { href: 'https://facebook.github.io/react' },
+	          'React'
+	        ),
+	        ' -This was the javascript use.'
 	      ),
 	      React.createElement(
-	         'p',
-	         null,
-	         'This is about page'
+	        'li',
+	        null,
+	        React.createElement(
+	          'a',
+	          { href: 'http://openweathermap.org' },
+	          'Open weather map'
+	        ),
+	        ' -I use open weather map to serach for weather data by city name.'
 	      )
-	   );
+	    )
+	  );
 	};
 	module.exports = About;
 
