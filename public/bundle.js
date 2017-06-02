@@ -25079,7 +25079,7 @@
 	
 	        return React.createElement(
 	          'h3',
-	          null,
+	          { className: 'text-center' },
 	          'Fetching Weather...'
 	        );
 	      } else if (temp && location) {
@@ -25090,8 +25090,8 @@
 	      'div',
 	      null,
 	      React.createElement(
-	        'h2',
-	        null,
+	        'h1',
+	        { className: 'text-center' },
 	        'Get Weather'
 	      ),
 	      React.createElement(WeatherForm, { onSearch: this.handleSearch }),
@@ -25131,7 +25131,7 @@
 	        React.createElement('input', { type: 'text', ref: 'location' }),
 	        React.createElement(
 	          'button',
-	          null,
+	          { className: 'button expanded hollow' },
 	          'Get Weather'
 	        )
 	      )
@@ -25168,7 +25168,7 @@
 	            null,
 	            React.createElement(
 	                  'h3',
-	                  null,
+	                  { className: 'text-center' },
 	                  'its ',
 	                  temp,
 	                  ' in ',
